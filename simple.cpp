@@ -1,5 +1,6 @@
 void test(int x) {
-  // switch(x) {
-  //   case 0:
-  // }
+  switch(x) {
+    case 0:
+    default:
+  }
 }
