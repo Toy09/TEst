@@ -43,7 +43,7 @@ class Test {
                 }
         }
         do {
-            pritnf("do while\n");
+            printf("do while\n");
         } while(false);
         if(x % 2 == 0)
             cout << /*x % 2 <<*/ endl;
@@ -102,7 +102,7 @@ class  Abst {
 public:
     virtual Abst& Test() = 0;
     void print() {
-        std::cout << "Abst print" << std::endl;
+        cout << "Abst print" << endl;
     }
 };
 
@@ -121,7 +121,7 @@ void TestFunc(char *arg) {
 
 int main(int argc, char *argv[]){
     int x;
-    std::cin >> x;
+    cin >> x;
     Abst *test = new CapAbst();
     test->Test().print();
     if(x == argc) {
