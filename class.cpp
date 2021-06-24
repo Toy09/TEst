@@ -15,44 +15,44 @@ class Fourth {
 };*/
 
 class Test {
-    // void print1() {
-    //     int x;
-    //     cin >> x;
-    //     x = (x > 10) ? : 0 + 2;
-    //     switch(x) {
-    //         case 1:
-    //             while(true)
-    //                 printf("error\n");
-    //             break;
-    //         case 2:
-    //             printf("return\n");
-    //             return;
-    //         case 3:
-    //             // for(int d=0;d<x;d++)
-    //             //     printf("%d ", d);
-    //             printf("\n");
-    //             break;
-    //         case 4:
-    //             int y;
-    //             cin >> y;
-    //             switch(y) {
-    //                 case 1:
-    //                     printf("f\n");
-    //                     break;
-    //                 default :
-    //                     printf("dd\n");
-    //             }
-    //     }
-    //     do {
-    //         printf("do while\n");
-    //     } while(false);
-    //     if((x % 2 == 0) && (x > 10))
-    //         cout << /*x % 2 <<*/ endl;
-    //     else if(x < 0)
-    //         cout << x << endl;
-    //     else
-    //         cout << x + 1 << endl;
-    // }
+    void print1() {
+        int x;
+        cin >> x;
+        x = (x > 10) ? : 0 + 2;
+        // switch(x) {
+        //     case 1:
+        //         while(true)
+        //             printf("error\n");
+        //         break;
+        //     case 2:
+        //         printf("return\n");
+        //         return;
+        //     case 3:
+        //         // for(int d=0;d<x;d++)
+        //         //     printf("%d ", d);
+        //         printf("\n");
+        //         break;
+        //     case 4:
+        //         int y;
+        //         cin >> y;
+        //         switch(y) {
+        //             case 1:
+        //                 printf("f\n");
+        //                 break;
+        //             default :
+        //                 printf("dd\n");
+        //         }
+        // }
+        do {
+            printf("do while\n");
+        } while(false);
+        if((x % 2 == 0) && (x > 10))
+            cout << /*x % 2 <<*/ endl;
+        else if(x < 0)
+            cout << x << endl;
+        else
+            cout << x + 1 << endl;
+    }
     void print2() {
         int y;
         cin >> y;
