@@ -115,70 +115,22 @@ class Fourth {
 //     }
 // };
 
-// void TestFunc(char *arg) {
-//     printf("%s\n", arg);
-// }
+void TestFunc(char *arg) {
+    printf("%s\n", arg);
+}
 
-// int main(int argc, char *argv[]){
-//     int x;
-//     std::cin >> x;
-//     Abst *test = new CapAbst();
-//     test->Test().print();
-//     if(x == argc) {
-//         int y; int count = 0;
-//         int z, iz;
-//         /*y =*/ /*argc >> 1;*/
-//         y = argc /*>> 1 */>> 1 /*>> 1*/;
-//         for(x = 1; x < y; x++, count++) {
-//             TestFunc(argv[x * 2]);
-//         }
-//         x = 0;
-//         while(x < argc) {
-//             printf("x++ : %d\n", x++);
-//         }
-//         switch(count%2) {
-//             case 1:
-//                 printf("1\n");
-//                 break;
-//             case 2:
-//                 printf("2\n");
-//                 break;
-//             default :
-//                 switch(argc) {
-//                     case 3:
-//                         printf("3\n");
-//                         // break;
-//                     case 4:
-//                         printf("4\n");
-//                         // break;
-//                 }
-//         }
-//         printf("count %d\n", count > 2 ? true : false);
-//         goto Exit_true;
-//     } else if (x > argc) {
-//         printf("gt\n");
-//     } else {
-//         return 0;
-//     }
-// Test:
-//     TestFunc((char*)"no arguments");
-//     goto Exit_false;
-// Exit_true:
-//     return 1;
-// Exit_false:
-//     return 0;
-// }
-
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]){
     int x;
     std::cin >> x;
+    // Abst *test = new CapAbst();
+    test->Test().print();
     if(x == argc) {
         int y; int count = 0;
         int z, iz;
         /*y =*/ /*argc >> 1;*/
         y = argc /*>> 1 */>> 1 /*>> 1*/;
         for(x = 1; x < y; x++, count++) {
-            printf("dd\n");
+            TestFunc(argv[x * 2]);
         }
         x = 0;
         while(x < argc) {
@@ -209,10 +161,10 @@ int main(int argc, char *argv[]) {
         return 0;
     }
 Test:
+    TestFunc((char*)"no arguments");
     goto Exit_false;
 Exit_true:
     return 1;
 Exit_false:
     return 0;
-    }
 }
