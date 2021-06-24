@@ -12,8 +12,8 @@ void test(int x) {
       default :
         tmp = (y == 0) && (y % 10 == 0);
     }
-    default :
-    
+    case 10:
+
     try {
       printf("y[%d]:%d\n", tmp, (y > 10) ? (y % 10) : y);
       goto NAME;
