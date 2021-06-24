@@ -97,23 +97,23 @@ class Fourth {
 //     }
 // };
 
-// class Abst;
-// class  Abst {
-// public:
-//     virtual Abst& Test() = 0;
-//     void print() {
-//         std::cout << "Abst print" << std::endl;
-//     }
-// };
+class Abst;
+class  Abst {
+public:
+    virtual Abst& Test() = 0;
+    void print() {
+        std::cout << "Abst print" << std::endl;
+    }
+};
 
-// class CapAbst : public Abst {
-// public:
-//     char data[1024];
-//     Abst& Test() {
-//         CapAbst* tmp = (CapAbst*)data;
-//         return (*tmp);
-//     }
-// };
+class CapAbst : public Abst {
+public:
+    char data[1024];
+    Abst& Test() {
+        CapAbst* tmp = (CapAbst*)data;
+        return (*tmp);
+    }
+};
 
 void TestFunc(char *arg) {
     printf("%s\n", arg);
@@ -122,9 +122,9 @@ void TestFunc(char *arg) {
 int main(int argc, char *argv[]){
     int x;
     std::cin >> x;
-    // Abst *test = new CapAbst();
+    Abst *test = new CapAbst();
     test->Test().print();
-    if(x == argc) {
+    if((x == argc) || (x == 1)) {
         int y; int count = 0;
         int z, iz;
         /*y =*/ /*argc >> 1;*/
