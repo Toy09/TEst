@@ -18,6 +18,7 @@ class Test {
     void print1() {
         int x;
         cin >> x;
+        x = (x > 10) ? : 0 + 2;
         switch(x) {
             case 1:
                 while(true)
