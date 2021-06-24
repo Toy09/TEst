@@ -12,6 +12,7 @@ void test(int x) {
       default :
         tmp = (y == 0) && (y % 10 == 0);
     }
+    default :
     
     try {
       printf("y[%d]:%d\n", tmp, (y > 10) ? (y % 10) : y);
