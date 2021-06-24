@@ -1,7 +1,8 @@
 void test(int x) {
   while(true) {
     x += 1;
-    continue;
+
+    break;
     x -= 1;
   }
 }
