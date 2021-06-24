@@ -2,5 +2,5 @@
 #include <iostream>
 
 void test(int x) {
-  x= x>1?10:1;
+  x = ((x>10) ? : 0) + 42;
 }
