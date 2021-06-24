@@ -8,6 +8,7 @@ void test(int x) {
     switch(y) {
       case 50:
         tmp = false;
+        break;
       default :
         tmp = (y == 0) && (y % 10 == 0);
     }
