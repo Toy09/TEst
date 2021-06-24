@@ -12,5 +12,5 @@ void test(int x) {
       break;
     }
     y++;
-  } while((y < x) | (y <= 100));
+  } while((y < x) ^ (y <= 100));
 }
