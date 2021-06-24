@@ -6,7 +6,7 @@ void test(int x) {
     try {
       printf("try\n");
     } catch (...) {
-      printf("error\n");
+      break;
     }
     x -= 1;
   }
