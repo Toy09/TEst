@@ -6,9 +6,10 @@ void test(int x) {
   bool tmp = false;
   do {
     switch(y) {
+      case 50:
+        tmp = false;
       default :
         tmp = (y == 0) && (y % 10 == 0);
-        break;
     }
     
     try {
