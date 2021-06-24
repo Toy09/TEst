@@ -1,13 +1,12 @@
 #include "stdio.h"
+#include <iostream>
 
 void test(int x) {
-  while(true) {
-    x += 1;
+  for(int y = 0; y < x; y++) {
     try {
-      printf("try\n");
-    } catch (...) {
+      printf("y:%d\n", y);
+    } catch (std::runtime_error &e) {
       break;
     }
-    x -= 1;
   }
 }
