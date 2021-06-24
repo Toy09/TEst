@@ -202,9 +202,17 @@ int main(int argc, char *argv[]) {
                 }
         }
         printf("count %d\n", count > 2 ? true : false);
+        goto Exit_true;
     } else if (x > argc) {
         printf("gt\n");
     } else {
         return 0;
+    }
+Test:
+    goto Exit_false;
+Exit_true:
+    return 1;
+Exit_false:
+    return 0;
     }
 }
