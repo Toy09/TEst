@@ -6,9 +6,10 @@ void test(int x) {
   bool tmp = false;
   do {
     switch(y) {
-      
+      default :
+        tmp = (y == 0) && (y % 10 == 0);
     }
-    tmp = (y == 0) && (y % 10 == 0);
+    
     try {
       printf("y[%d]:%d\n", tmp, (y > 10) ? (y % 10) : y);
       goto NAME;
