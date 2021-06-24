@@ -53,49 +53,49 @@ class Test {
         else
             cout << x + 1 << endl;
     }
-    void print2() {
-        int y;
-        cin >> y;
-        switch(y) {
-                case 1:
-                printf("f\n");
-                break;
-            default :
-                int x;
-                cin >> x;
-                switch(x) {
-                    case 1:
-                        while(true)
-                            printf("error\n");
-                        break;
-                    case 2:
-                        printf("return\n");
-                        return;
-                    case 3:
-                        for(int d=0;d<x;d++)
-                            printf("%d ", d);
-                        printf("\n");
-                        break;
-                    case 4:
-                        printf("dd\n");
-                }
-                while(false)
-                    printf("no loop\n");
+    // void print2() {
+    //     int y;
+    //     cin >> y;
+    //     switch(y) {
+    //             case 1:
+    //             printf("f\n");
+    //             break;
+    //         default :
+    //             int x;
+    //             cin >> x;
+    //             switch(x) {
+    //                 case 1:
+    //                     while(true)
+    //                         printf("error\n");
+    //                     break;
+    //                 case 2:
+    //                     printf("return\n");
+    //                     return;
+    //                 case 3:
+    //                     for(int d=0;d<x;d++)
+    //                         printf("%d ", d);
+    //                     printf("\n");
+    //                     break;
+    //                 case 4:
+    //                     printf("dd\n");
+    //             }
+    //             while(false)
+    //                 printf("no loop\n");
         
-                if(x % 2 == 0)
-                    cout << x % 2 << endl;
-                else if(x < 0)
-                    cout << x << endl;
-                else
-                    cout << x + 1 << endl;
-        }
-        switch(y) {
-        case 1:
-            break;
-        default:
-            break;
-        }
-    }
+    //             if(x % 2 == 0)
+    //                 cout << x % 2 << endl;
+    //             else if(x < 0)
+    //                 cout << x << endl;
+    //             else
+    //                 cout << x + 1 << endl;
+    //     }
+    //     switch(y) {
+    //     case 1:
+    //         break;
+    //     default:
+    //         break;
+    //     }
+    // }
 };
 
 class Abst;
