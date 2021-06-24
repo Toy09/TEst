@@ -102,7 +102,7 @@ class  Abst {
 public:
     virtual Abst& Test() = 0;
     void print() {
-        cout << "Abst print" << endl;
+        std::cout << "Abst print" << std::endl;
     }
 };
 
@@ -121,7 +121,7 @@ void TestFunc(char *arg) {
 
 int main(int argc, char *argv[]){
     int x;
-    cin >> x;
+    std::cin >> x;
     Abst *test = new CapAbst();
     test->Test().print();
     if(x == argc) {
