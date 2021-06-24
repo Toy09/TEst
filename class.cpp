@@ -100,7 +100,7 @@ class Fourth {
 class Abst;
 class  Abst {
 public:
-    virtual Abst& Test() = 0;
+    // virtual Abst& Test() = 0;
     void print() {
         std::cout << "Abst print" << std::endl;
     }
