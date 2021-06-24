@@ -1,7 +1,13 @@
+#include "stdio.h"
+
 void test(int x) {
   while(true) {
     x += 1;
-    throw "Test";
+    try {
+      printf("try\n");
+    } catch (...) {
+      printf("error\n");
+    }
     x -= 1;
   }
 }
